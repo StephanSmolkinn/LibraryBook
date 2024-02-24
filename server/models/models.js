@@ -32,7 +32,7 @@ const BookInfo = sequelize.define('book_info', {
 
 const FavoritesBookList = sequelize.define('favorites_book', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
-    count: {type: DataTypes.INTEGER, allowNull: false}
+    count: {type: DataTypes.INTEGER, allowNull: true}
 })
 
 const GenreAuthor = sequelize.define('genre_author', {

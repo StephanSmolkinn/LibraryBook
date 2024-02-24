@@ -12,7 +12,6 @@ class GenreController {
         const genres = await Genre.findAll()
         return res.json(genres)
     }
-
 }
 
 module.exports = new GenreController()
